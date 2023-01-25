@@ -1,0 +1,71 @@
+.creation {
+    max-width: 144rem;
+    margin: 10rem auto;
+}
+
+.creation__title-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.creation__title{
+    font-size: 7rem;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.creation__link{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1.5rem 4rem 1rem;
+    border: 2px solid var(--black);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    color: var(--black);
+    text-transform: uppercase;
+    transition: all 0.3s ease-in;
+}
+
+.creation__link:hover {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.creation__grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8rem;
+}
+
+.creation__item{
+    position: relative;
+    cursor: pointer;
+}
+
+.creation__item:hover .creation__image{
+    opacity: .3;
+}
+
+.creation__item:hover .creation__text {
+    color: var(--black);
+}
+
+.creation__image{
+    width: 100%;
+    transition: all .3s ease-in;
+}
+
+.creation__text{
+    width: 60%;
+    font-size: 3rem;
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 3rem;
+    left: 3rem;
+    color: var(--white);
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all .3s ease-in;
+}
